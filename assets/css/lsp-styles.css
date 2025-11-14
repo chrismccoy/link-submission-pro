@@ -1,0 +1,116 @@
+#lsp-form-wrapper {
+  background-color: #1f2937; /* bg-gray-800 */
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  max-width: 42rem; /* max-w-2xl */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#lsp-submission-form {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
+}
+#lsp-submission-form > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
+}
+#lsp-submission-form .text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+#lsp-submission-form .font-bold {
+  font-weight: 700;
+}
+#lsp-submission-form .text-white {
+  color: #fff;
+}
+#lsp-submission-form .text-center {
+  text-align: center;
+}
+#lsp-submission-form .block {
+  display: block;
+}
+#lsp-submission-form .text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+#lsp-submission-form .font-medium {
+  font-weight: 500;
+}
+#lsp-submission-form .text-gray-300 {
+  color: #d1d5db;
+}
+#lsp-submission-form .mt-1 {
+  margin-top: 0.25rem;
+}
+#lsp-submission-form input,
+#lsp-submission-form select {
+  background-color: #374151; /* bg-gray-700 */
+  color: #fff;
+  width: 100%;
+  border: 1px solid #4b5563; /* border-gray-600 */
+  border-radius: 0.375rem;
+  /* THE CHANGE IS HERE: Increased padding from 0.5rem to 0.75rem for more height. */
+  padding: 0.75rem 0.75rem;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+#lsp-submission-form input:focus,
+#lsp-submission-form select:focus {
+  --tw-ring-color: #4f46e5; /* ring-indigo-500 */
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  border-color: #6366f1; /* border-indigo-500 */
+  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow),
+    0 0 0 0 transparent;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  box-shadow: 0 0 0 2px var(--tw-ring-color);
+}
+#lsp-submit-button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 0.75rem 1rem; /* Also increased this for consistency */
+  border: 1px solid transparent;
+  border-radius: 0.375rem;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 500;
+  color: #fff;
+  background-color: #4f46e5; /* bg-indigo-600 */
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+#lsp-submit-button:hover {
+  background-color: #4338ca; /* hover:bg-indigo-700 */
+}
+#lsp-submit-button:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow),
+    0 0 0 0 transparent;
+  box-shadow: 0 0 0 2px #1f2937, 0 0 0 4px #4f46e5;
+}
+#lsp-submit-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+#lsp-form-messages {
+  margin-top: 1rem;
+  text-align: center;
+}
+.text-green-400 {
+  color: #4ade80;
+}
+.text-red-400 {
+  color: #f87171;
+}
